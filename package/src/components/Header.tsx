@@ -38,16 +38,16 @@ const Header: React.FunctionComponent<HeaderProps> = ({
     : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
 
   const handleMonthChange = (event: SelectChangeEvent<number>) => {
-    setDate(setMonth(date, parseInt(event.target.value as string, 10)));
+    setDate(setMonth(date, parseInt(event.target.value.toString(), 10)));
   };
 
   const handleYearChange = (event: SelectChangeEvent<number>) => {
-    setDate(setYear(date, parseInt(event.target.value as string, 10)));
+    setDate(setYear(date, parseInt(event.target.value.toString(), 10)));
   };
 
   return (
     <Grid container justifyContent="space-between" alignItems="center">
-      <Grid item sx={{padding: '5px'}}>
+      <Grid sx={{padding: '5px'}}>
         <IconButton
           sx={{
             padding: '10px',
@@ -62,7 +62,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
           <ChevronLeftIcon color={prevDisabled ? 'disabled' : 'action'}/>
         </IconButton>
       </Grid>
-      <Grid item>
+      <Grid>
         <FormControl variant="standard">
           <Select
             value={getMonth(date)}
@@ -78,7 +78,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
         </FormControl>
       </Grid>
 
-      <Grid item>
+      <Grid>
         <FormControl variant="standard">
           <Select
             value={getYear(date)}
@@ -93,9 +93,8 @@ const Header: React.FunctionComponent<HeaderProps> = ({
           </Select>
         </FormControl>
 
-        {/* <Typography>{format(date, "MMMM YYYY")}</Typography> */}
       </Grid>
-      <Grid item sx={{padding: '5px'}}>
+      <Grid sx={{padding: '5px'}}>
         <IconButton
           sx={{
             padding: '10px',

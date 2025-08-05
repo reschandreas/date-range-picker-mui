@@ -71,7 +71,6 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
         />
 
         <Grid
-          item
           container
           direction="row"
           justifyContent="space-between"
@@ -89,7 +88,6 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
         </Grid>
 
         <Grid
-          item
           container
           direction="column"
           justifyContent="space-between"

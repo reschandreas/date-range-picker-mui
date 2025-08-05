@@ -68,15 +68,15 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
         <Divider orientation="vertical" flexItem/>
         <Grid>
           <Grid container sx={{padding: '20px 70px'}} alignItems="center">
-            <Grid item sx={{flex: 1, textAlign: 'center'}}>
+            <Grid sx={{flex: 1, textAlign: 'center'}}>
               <Typography variant="subtitle1">
                 {startDate ? format(startDate, 'dd MMMM yyyy', {locale}) : 'Start Date'}
               </Typography>
             </Grid>
-            <Grid item sx={{flex: 1, textAlign: 'center'}}>
+            <Grid sx={{flex: 1, textAlign: 'center'}}>
               <ArrowRightAltIcon color="action"/>
             </Grid>
-            <Grid item sx={{flex: 1, textAlign: 'center'}}>
+            <Grid sx={{flex: 1, textAlign: 'center'}}>
               <Typography variant="subtitle1">
                 {endDate ? format(endDate, 'dd MMMM yyyy', {locale}) : 'End Date'}
               </Typography>
