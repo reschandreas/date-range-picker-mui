@@ -3,5 +3,12 @@
     "extends": [
         "config:recommended"
     ],
-    "forkProcessing": "enabled"
+    "forkProcessing": "enabled",
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        }
+    ],
+    "platformAutomerge": true
 }
