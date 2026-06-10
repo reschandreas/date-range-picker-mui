@@ -57,7 +57,7 @@
         "@mui/icons-material": "^7.0.0",
         "@mui/material": "^7.0.0",
         "@rollup/plugin-babel": "^7.0.0",
-        "@rollup/plugin-commonjs": "^28.0.2",
+        "@rollup/plugin-commonjs": "^29.0.0",
         "@rollup/plugin-node-resolve": "^16.0.0",
         "@rollup/plugin-url": "^8.0.2",
         "@types/jest": "^30.0.0",
