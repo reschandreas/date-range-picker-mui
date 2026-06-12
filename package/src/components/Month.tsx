@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, Paper, Typography} from "@mui/material";
+import {Grid, Paper, Typography, Stack} from "@mui/material";
 import {format, getDate, isSameMonth, isToday, isWithinInterval} from "date-fns";
 import {chunks, getDaysInMonth, inDateRange, isEndOfRange, isRangeSameDay, isStartOfRange} from "../utils";
 import Header from "./Header";
@@ -59,7 +59,7 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
 
   return (
     <Paper square elevation={0} sx={{width: 290}}>
-      <Grid container>
+      <Stack>
         <Header
           date={date}
           setDate={setDate}
@@ -127,7 +127,7 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
             </Grid>
           ))}
         </Grid>
-      </Grid>
+      </Stack>
     </Paper>
   );
 };
