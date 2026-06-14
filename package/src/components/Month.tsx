@@ -73,11 +73,11 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
         <Grid
           container
           direction="row"
-          justifyContent="space-between"
           sx={{
             marginTop: "10px",
             paddingLeft: "30px",
-            paddingRight: "30px"
+            paddingRight: "30px",
+            justifyContent: 'space-between'
           }}
         >
           {WEEK_DAYS.map((day, index) => (
@@ -87,19 +87,17 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
           ))}
         </Grid>
 
-        <Grid
-          container
-          direction="column"
-          justifyContent="space-between"
+        <Stack
           sx={{
             paddingLeft: '15px',
             paddingRight: '15px',
             marginTop: '15px',
-            marginBottom: '20px'
+            marginBottom: '20px',
+            justifyContent: 'space-between'
           }}
         >
           {chunks(getDaysInMonth(date, locale), 7).map((week, idx) => (
-            <Grid key={idx} container direction="row" justifyContent="center">
+            <Grid key={idx} container direction="row" sx={{ justifyContent: 'center' }}>
               {week.map((day) => {
                 const isStart = isStartOfRange(dateRange, day);
                 const isEnd = isEndOfRange(dateRange, day);
@@ -126,7 +124,7 @@ const Month: React.FunctionComponent<MonthProps> = (props: MonthProps) => {
               })}
             </Grid>
           ))}
-        </Grid>
+        </Stack>
       </Stack>
     </Paper>
   );

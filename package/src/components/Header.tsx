@@ -46,7 +46,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
   };
 
   return (
-    <Grid container justifyContent="space-between" alignItems="center">
+    <Grid container sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
       <Grid sx={{padding: '5px'}}>
         <IconButton
           sx={{
@@ -57,7 +57,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({
           }}
           disabled={prevDisabled}
           onClick={onClickPrevious}
-          // size="large"
         >
           <ChevronLeftIcon color={prevDisabled ? 'disabled' : 'action'}/>
         </IconButton>
@@ -104,7 +103,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({
           }}
           disabled={nextDisabled}
           onClick={onClickNext}
-          // size="large"
         >
           <ChevronRightIcon color={nextDisabled ? 'disabled' : 'action'}/>
         </IconButton>
