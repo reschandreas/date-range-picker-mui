@@ -1,4 +1,4 @@
-/* eslint-disable object-curly-newline */
+ 
 import React from 'react';
 import {Divider, Grid, Paper, Typography} from '@mui/material';
 import {differenceInCalendarMonths, format} from 'date-fns';

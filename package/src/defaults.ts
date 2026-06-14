@@ -11,7 +11,7 @@ import {
   startOfYear,
 } from 'date-fns';
 
-// eslint-disable-next-line no-unused-vars
+ 
 import {DefinedRange} from './types';
 import {Locale} from "date-fns/locale";
 
