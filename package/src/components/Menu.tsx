@@ -67,7 +67,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
         </Grid>
         <Divider orientation="vertical" flexItem/>
         <Grid>
-          <Grid container sx={{padding: '20px 70px'}} alignItems="center">
+          <Grid container sx={{padding: '20px 70px', alignItems: 'center'}}>
             <Grid sx={{flex: 1, textAlign: 'center'}}>
               <Typography variant="subtitle1">
                 {startDate ? format(startDate, 'dd MMMM yyyy', {locale}) : 'Start Date'}
@@ -83,7 +83,7 @@ const Menu: React.FunctionComponent<MenuProps> = (props: MenuProps) => {
             </Grid>
           </Grid>
           <Divider/>
-          <Grid container direction="row" justifyContent="center" wrap="nowrap">
+          <Grid container direction="row" wrap="nowrap" sx={{ justifyContent: "center" }}>
             <Month
               {...commonProps}
               value={firstMonth}

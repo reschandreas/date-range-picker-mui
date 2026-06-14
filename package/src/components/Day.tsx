@@ -50,7 +50,6 @@ const DayComponent: React.FunctionComponent<DayProps> = ({
         disabled={disabled}
         onClick={onClick}
         onMouseOver={onHover}
-        // size="large"
       >
         <Typography
           sx={{
