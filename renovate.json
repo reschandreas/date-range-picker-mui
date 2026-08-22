@@ -8,7 +8,8 @@
     "rebaseWhen": "behind-base-branch",
     "lockFileMaintenance": {
         "enabled": true,
-        "automerge": true
+        "automerge": true,
+        "autoApprove": true
     },
     "packageRules": [
         {
@@ -33,8 +34,9 @@
         {
             "matchManagers": ["github-actions"],
             "matchUpdateTypes": ["major", "minor", "patch"],
-            "automerge": true,
+            "automerge": true
         }
     ],
-    "platformAutomerge": true
+    "platformAutomerge": true,
+    "autoApprove": true
 }
