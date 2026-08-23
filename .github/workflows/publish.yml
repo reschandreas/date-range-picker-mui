@@ -26,5 +26,5 @@ jobs:
         working-directory: package
       - run: yarn run copy_publish_files
         working-directory: package
-      - run: npm stage publish
+      - run: npm publish
         working-directory: package
