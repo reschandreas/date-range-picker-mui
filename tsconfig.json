@@ -11,9 +11,9 @@
         ],
         "sourceMap": true,
         "allowJs": false,
-        "jsx": "react",
+        "jsx": "react-jsx",
         "declaration": true,
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "forceConsistentCasingInFileNames": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
@@ -21,6 +21,7 @@
         "strictNullChecks": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
+        "skipLibCheck": true,
         "allowSyntheticDefaultImports": true
     },
     "include": [
