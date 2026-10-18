@@ -2,9 +2,8 @@ import {FormControl, Grid, IconButton, MenuItem, Select, SelectChangeEvent} from
 import React from 'react';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {getMonth, getYear, setMonth, setYear} from 'date-fns';
+import {getMonth, getYear, setMonth, setYear, type Month} from 'date-fns';
 import {Locale} from "date-fns/locale";
-import {Month} from "date-fns/types";
 
 interface HeaderProps {
   date: Date;

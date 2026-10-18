@@ -1,12 +1,11 @@
 import React from "react";
 import {Grid, Paper, Typography, Stack} from "@mui/material";
-import {format, getDate, isSameMonth, isToday, isWithinInterval} from "date-fns";
+import {format, getDate, isSameMonth, isToday, isWithinInterval, type Day} from "date-fns";
 import {chunks, getDaysInMonth, inDateRange, isEndOfRange, isRangeSameDay, isStartOfRange} from "../utils";
 import Header from "./Header";
 import {Locale} from "date-fns/locale";
 
 import {DateRange, NavigationAction} from "../types";
-import {Day} from "date-fns/types";
 import DayComponent from "./Day";
 
 

@@ -1,4 +1,3 @@
-import typescript from 'rollup-plugin-typescript2';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
@@ -31,11 +30,15 @@ export default {
     babel({
       babelHelpers: 'runtime',
       exclude: 'node_modules/**',
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs', '.cjs'],
+      presets: [
+        ['@babel/preset-react', {runtime: 'automatic'}],
+        '@babel/preset-typescript',
+      ],
       plugins: ["@babel/plugin-transform-runtime"],
     }),
-    resolve(),
-    typescript({
-      clean: true,
+    resolve({
+      extensions: ['.mjs', '.js', '.json', '.node', '.ts', '.tsx', '.jsx'],
     }),
     commonjs(commonjsOptions),
   ],
